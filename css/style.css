@@ -1,0 +1,128 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Poppins', sans-serif;
+  font-size:15px;
+}
+
+.sidebar{
+  height:90vh;
+  width:15vw;
+  background-color:#181818;
+  position: relative;
+}
+.menu > ul > li {
+  list-style: none;
+}
+
+.menu > ul > li >img{
+    width:30px;
+    height:30px;
+}
+
+.menu .playlist{
+  padding-left:10px;
+  padding-top:10px;
+}
+.menu > ul > li > a{
+  text-decoration: none;
+  color:#fff;
+  vertical-align: middle;
+  line-height:30px;
+}
+
+.playlist > h4 {
+  color:#fff;
+  font-size:1.7;
+}
+
+.playlist > h5 {
+  color:lightgrey;
+  display: inline-block;
+  font-size:1rem;
+}
+
+.playlist > ul >li{
+  color: lightgrey;
+  font-size:0.8rem;
+  list-style: none;
+}
+.square{
+  height:30px;
+  width:30px;
+  background-color:lightgrey;
+  display: inline-block;
+}
+
+.square > p{
+  font-size:2rem;
+  vertical-align: middle;
+  line-height:30px;
+  text-align: center;
+}
+
+.download{
+  position: absolute;
+  bottom:0;
+}
+.download > img:first-of-type{
+  width:20px;
+  height:20px;
+}
+.download > span:first-of-type{
+  color:lightgrey;
+  font-size:1rem;
+}
+.download > img:last-of-type{
+  width:30px;
+  height:30px;
+  background-color:lightgrey;
+  border-radius:50%;
+}
+.download > span:last-of-type{
+  color:#fff;
+  font-size:1.3rem;
+  font-weight: bold;
+}
+
+
+.jumbotron{
+  height: 90vh;
+  width: 85vw;
+  background-color:#151921;
+  position: absolute;
+  top:0;
+  right:0;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+ .jumbotron > img {
+   height:100px;
+   width: 100px;
+ }
+
+ .player-music{
+   height:10vh;
+   width:100vw;
+   background-color:#282828;
+ }
+
+@media screen and (min-width:1100px){
+
+}
+
+@media screen and (max-width:900px) and (min-width:1099px){
+
+}
+
+@media screen and (max-width:700px) and (min-width:899px){
+
+}
+
+@media screen and (max-width:699px){
+
+}
