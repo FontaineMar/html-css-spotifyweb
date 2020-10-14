@@ -17,40 +17,33 @@ main{
   flex-wrap: wrap;
 }
 
-
-
 .sidebar{
   height: calc(100% - 100px);
   width:200px;
   background-color:#181818;
-  overflow-y: scroll;
-  overflow: hidden;
 }
 
 .sidebar-top{
-  height:calc(100% - 100px);
+  height:calc(100% - 70px);
   width:100%;
-  min-height:70%;
-
-
+  min-height:300px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom:20px;
 }
 
 .sidebar-logo{
-  min-height:20%;
-  width: 100%;
+
+
   padding:20px;
 }
 
 .sidebar-menu{
-  height:30%;
-  width:100%;
   padding:10px 0 0 20px;
-
 
 }
 
 .sidebar-playlist{
-  height:50%;
   overflow-y: auto;
   padding:10px 0 0 20px;
 }
@@ -77,6 +70,7 @@ main{
 .sidebar-playlist > h4 {
   color:#fff;
   font-size:1.7;
+  padding:10px;
 }
 
 .sidebar-playlist > div > h5 {
@@ -88,6 +82,7 @@ main{
 
 .sidebar-playlist > ul {
   margin-top:20px;
+
 }
 .sidebar-playlist > ul >li{
   color: lightgrey;
@@ -115,9 +110,10 @@ main{
 }
 
 .sidebar-bottom{
-  height: 100px;
-  overflow: hidden;
-  text-align:
+height:70px;
+overflow-y: hidden;
+
+
 }
 
 .sidebar-bottom > img:first-of-type{
@@ -146,7 +142,7 @@ main{
   width:calc(100% - 200px);
   background-color:#151921;
   overflow: scroll;
-  overflow-x: hidden;
+  overflow-x: scroll;
   position: relative;
 }
 
@@ -160,7 +156,7 @@ main{
 .upgrade > a{
   vertical-align: middle;
   line-height:80px;
-  background-color:#8b11;
+  background-color:rgba(0, 0, 0, 0.5);
   color:#fff;
   border: 1px solid #fff;
   border-radius:20px;
@@ -184,8 +180,12 @@ main{
   text-decoration: none;
   font-weight: bold;
   font-size:1rem;
-  padding-left:5px;
-  padding-right:5px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.menu-music > ul > li > a:hover{
+  border-bottom:1px solid lightyellow
 }
 
 .cont-flex{
@@ -197,7 +197,7 @@ main{
 .music{
   padding-left:10px;
   padding-right:10px;
-  margin-top:30px;
+  margin-top:70px;
 }
 
 .music > div > h2{
@@ -205,11 +205,13 @@ main{
   font-size:2rem;
   padding:10px;
   }
-  .music > div > p{
+
+.music > div > p{
     color:lightgrey;
     font-size: 0.8rem;
     padding:0 10px;
-  }
+}
+
 .album > div > h4{
   color:#fff;
   font-size:0.8rem;
@@ -226,10 +228,14 @@ main{
 }
 
 .album {
-  width: calc(100% / 6);
+  width:200px ;
+  height:200px;
   padding:10px;
 }
-
+.album:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index:1;
+}
 #circle{
   border-radius:50%;
 }
@@ -240,11 +246,8 @@ main{
    background-color:#282828;
    display: flex;
    flex-direction: row;
-
-
+   color:#fff;
 }
-
-
 
 .music-on > img {
   width:50px;
@@ -255,6 +258,19 @@ main{
   display: flex;
   align-items: center;
   width:30%;
+  padding-left:50px;
+}
+
+.music-left > .icon > i {
+  color:lightgrey;
+  padding-left:10px;
+}
+.text-music{
+  padding-left:10px;
+}
+.text-music > p {
+  color:lightgrey;
+  font-size:0.8rem
 }
 
 .music-cent{
@@ -301,6 +317,7 @@ main{
   flex-direction: row;
   justify-content: flex-end;
   align-items:center;
+  padding-right:50px;
 }
 
 .music-right > .icon > i {
@@ -310,7 +327,8 @@ main{
 }
 
 .music-right > input{
-    background-color:grey;}
+  background-color:grey;
+  }
 @media screen and (max-width:900px) and (min-width:1099px){
 
 }
